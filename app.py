@@ -325,10 +325,10 @@ def drawText(name, val):
             [
                 html.H5(
                     [
-                        html.p(name),
+                        html.P(name),
                     ]
                 ),
-                html.p(f"${val:,}"),
+                html.P(f"${val:,}"),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
         ),
@@ -343,10 +343,10 @@ def drawText1(name, val):
             [
                 html.H5(
                     [
-                        html.p(name),
+                        html.P(name),
                     ]
                 ),
-                html.p(f"${val:,}" ,style={'color':'#bA6800'}),
+                html.P(f"${val:,}" ,style={'color':'#bA6800'}),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
             
