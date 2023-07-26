@@ -323,12 +323,12 @@ def drawText(name, val):
         dbc.Card(
         html.Div(
             [
-                html.H3(
+                html.H5(
                     [
-                        html.H5(name),
+                        html.p(name),
                     ]
                 ),
-                html.H6(f"${val:,}"),
+                html.p(f"${val:,}"),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
         ),
@@ -341,12 +341,12 @@ def drawText1(name, val):
         dbc.Card(
         html.Div(
             [
-                html.H3(
+                html.H5(
                     [
-                        html.H5(name),
+                        html.p(name),
                     ]
                 ),
-                html.H6(f"${val:,}" ,style={'color':'#bA6800'}),
+                html.p(f"${val:,}" ,style={'color':'#bA6800'}),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
             
