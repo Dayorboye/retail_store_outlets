@@ -31,11 +31,11 @@ from sklearn.model_selection import train_test_split
 # 000 - BANNER AND TAB
 ####################################################################################################
 tabHead = dbc.Nav(
-    [   dbc.NavLink("Sales Prediction Measures", href="/", active="exact"),
-        dbc.NavLink("Abuja Branch Control Charts", href="/Abuja_Branch_Control_Charts", active="exact"),
-        dbc.NavLink("Lagos Branch Control Charts", href="/Lagos_Branch_Control_Charts", active="exact"),
-        dbc.NavLink("PHcourt Branch Control Charts", href="/Portharcourt_Branch_Control_Charts", active="exact"),
-        dbc.NavLink("Management Decision Engine", href="/Management_Decision_Engine", active="exact"),  
+    [   dbc.NavLink("Sales Prediction", href="/", active="exact"),
+        dbc.NavLink("Abuja Branch Charts", href="/Abuja_Branch_Control_Charts", active="exact"),
+        dbc.NavLink("Lagos Branch Charts", href="/Lagos_Branch_Control_Charts", active="exact"),
+        dbc.NavLink("PHcourt Branch Charts", href="/Portharcourt_Branch_Control_Charts", active="exact"),
+        dbc.NavLink("Decision Engine", href="/Management_Decision_Engine", active="exact"),  
     ],style={'width': '80%','margin-bottom':'-3px' },
 )
 
@@ -323,9 +323,9 @@ def drawText(name, val):
         dbc.Card(
         html.Div(
             [
-                html.H4(
+                html.H3(
                     [
-                        html.H6(name),
+                        html.H5(name),
                     ]
                 ),
                 html.H6(f"${val:,}"),
@@ -334,16 +334,16 @@ def drawText(name, val):
         ),
         className="text-center text-nowrap my-2 p-2",
     ),
-    ], style={'width':'160px','box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)'})
+    ], style={'width':'140px','box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)'})
 
 def drawText1(name, val):
     return html.Div([
         dbc.Card(
         html.Div(
             [
-                html.H4(
+                html.H3(
                     [
-                        html.H6(name),
+                        html.H5(name),
                     ]
                 ),
                 html.H6(f"${val:,}" ,style={'color':'#bA6800'}),
@@ -353,7 +353,7 @@ def drawText1(name, val):
         ),
         className="text-center text-nowrap my-2 p-2",
     ),
-    ], style={'width':'160px','box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)'})
+    ], style={'width':'140px','box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)'})
 
 colors = {
     'background': '#111111',
@@ -1369,4 +1369,3 @@ def make_output(n_clicks, dataset, model_name):
 
 if __name__ == "__main__":
     app.run(debug=False)
-
