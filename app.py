@@ -651,7 +651,7 @@ layout1 = html.Div([
 
             dbc.Row([
                 dbc.Col([
-                    html.Div([drawText(Ab_cogs_sum,Abuja_cogs_sum),drawText(Ab_gR_sum,Abuja_gR_sum),drawText(Ab_gInc_sum,Abuja_gInc_sum),drawText(Ab_gR_M_sum,Abuja_gR_M_sum),drawText(Ab_gInc_M_sum,Abuja_gInc_M_sum ),drawText(Ab_gR_N_sum,Abuja_gR_N_sum),drawText(Ab_gInc_N_sum,Abuja_gInc_N_sum),drawText(Ab_M_T_sum,Abuja_M_T_sum),drawText(Ab_N_T_sum,Abuja_N_T_sum))],
+                    html.Div([drawText(Ab_cogs_sum,Abuja_cogs_sum),drawText(Ab_gR_sum,Abuja_gR_sum),drawText(Ab_gInc_sum,Abuja_gInc_sum),drawText(Ab_gR_M_sum,Abuja_gR_M_sum),drawText(Ab_gInc_M_sum,Abuja_gInc_M_sum ),drawText(Ab_gR_N_sum,Abuja_gR_N_sum),drawText(Ab_gInc_N_sum,Abuja_gInc_N_sum),drawText(Ab_M_T_sum,Abuja_M_T_sum),drawText(Ab_N_T_sum,Abuja_N_T_sum)],
                              style={'display':'flex','flex-direction':'row','flex-wrap':'wrap','justify-content':'space-around','margin-bottom':'20px'}),
                 ], xs = 12 , sm = 12 , md = 12 , lg = 12 , xl = 12),
             ]),
