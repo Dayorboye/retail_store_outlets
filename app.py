@@ -323,12 +323,12 @@ def drawText(name, val):
         dbc.Card(
         html.Div(
             [
-                html.H5(
+                html.H4(
                     [
-                        html.P(name),
+                        html.H6(name,style={'font-size': '12px'}),
                     ]
                 ),
-                html.P(f"${val:,}"),
+                html.H6(f"${val:,}",style={'color':'#bA6800','font-size': '12px'}),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
         ),
@@ -341,12 +341,12 @@ def drawText1(name, val):
         dbc.Card(
         html.Div(
             [
-                html.H5(
+                html.H4(
                     [
-                        html.P(name),
+                        html.H6(name, style={'font-size': '12px'}),
                     ]
                 ),
-                html.P(f"${val:,}" ,style={'color':'#bA6800'}),
+                html.H6(f"${val:,}" ,style={'color':'#bA6800','font-size': '12px'}),
             ],
             className=f"border-{color} border-end border-4" f"border-{color} border-start border-5",
             
@@ -1369,3 +1369,4 @@ def make_output(n_clicks, dataset, model_name):
 
 if __name__ == "__main__":
     app.run(debug=False)
+
